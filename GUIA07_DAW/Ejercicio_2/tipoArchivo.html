@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Archivos de Imagen</title>
+    <link rel="stylesheet" href="css/typeArchi.css">
+</head>
+<body>
+
+<div class="upload-container">
+    <h2>Subir Imagen</h2>
+    <p>Solo se admiten formatos: <strong>.jpg, .png, .gif</strong></p>
+
+    <form id="uploadForm">
+        <!-- Input oculto -->
+        <input type="file" id="fileInput" name="archivo" accept="image/*">
+        
+        <!-- Label que actúa como botón visual -->
+        <label for="fileInput" class="custom-file-upload">
+            <span>Seleccionar archivo...</span>
+        </label>
+
+        <div id="statusMessage" class="status"></div>
+    </form>
+</div>
+
+<script src="js/archivo.js"></script>
+</body>
+</html>

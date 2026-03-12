@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Expresiones Regulares</title>
+    <link rel="stylesheet" href="css/ER.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Validador de Formatos</h2>
+    <div class="form-group">
+        <select id="tipoValidacion">
+            <option value="ipv4">Dirección IPv4</option>
+            <option value="url">URL (http/https/ftp/proto-rel)</option>
+            <option value="email">Correo Electrónico</option>
+        </select>
+        
+        <input type="text" id="entradaUsuario" placeholder="Ingrese el texto a validar..." autocomplete="off">
+        
+        <button id="btnValidar">Validar Ahora</button>
+    </div>
+
+    <div id="resultado" class="alert hidden"></div>
+</div>
+
+<script src="js/ExpesionRegular.js"></script>
+</body>
+</html>

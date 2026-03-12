@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diccionario Interactivo</title>
+    <link rel="stylesheet" href="css/diccionario.css">
+</head>
+<body>
+
+<div class="diccionario-container">
+    <h2>Diccionario Rápido</h2>
+    
+    <div class="search-box">
+        <input type="text" id="filtro" placeholder="Escriba para buscar palabra...">
+    </div>
+
+    <div class="main-content">
+        <div class="list-side">
+            <label>Palabras:</label>
+            <select id="listaPalabras" size="15"></select>
+            <button id="btnMostrar">Mostrar definición</button>
+        </div>
+
+        <div class="def-side">
+            <label>Definición:</label>
+            <textarea id="areaDefinicion" readonly placeholder="La definición aparecerá aquí..."></textarea>
+        </div>
+    </div>
+</div>
+
+<script src="js/diccionario.js"></script>
+</body>
+</html>

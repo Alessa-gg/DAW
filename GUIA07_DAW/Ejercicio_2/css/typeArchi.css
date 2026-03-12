@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.upload-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Ocultar el input original */
+input[type="file"] {
+    display: none;
+}
+
+/* Estilo del Label (El botón falso) */
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #2d67a8;
+    color: white;
+    border-radius: 5px;
+    transition:  0.3s ease;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.custom-file-upload:hover {
+    background-color: #357ABD;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.valid { background-color: #d4edda; color: #155724; display: block; }
+.invalid { background-color: #f8d7da; color: #721c24; display: block; }
