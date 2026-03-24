@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+
+    <div class="form-container">
+    <h2>Envia un Email</h2>
+    <form id="contactForm" novalidate> <!-- novalidate para que JS maneje todo -->
+        <div class="field">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" placeholder="Ej. Valentina González">
+            <span class="error-msg" id="err-nombre"></span>
+        </div>
+
+        <div class="field">
+            <label for="correo">Email</label>
+            <input type="email" id="correo" placeholder="correo@ejemplo.com">
+            <span class="error-msg" id="err-correo"></span>
+        </div>
+
+        <div class="field">
+            <label for="mensaje">Tu Mensaje</label>
+            <textarea id="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
+            <span class="error-msg" id="err-mensaje"></span>
+        </div>
+
+        <button type="submit" id="btnEnviar">Enviar Mensaje</button>
+    </form>
+</div>
+
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>
