@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="css/reproductor.css">
+</head>
+<body>
+
+    <div class="reproductor-card">
+        <div class="header">REPRODUCTOR</div>
+
+       
+        <div id="contenedor-scroll">
+            <div id="texto-movil">Selecciona una cancion...</div>
+        </div>
+
+        
+        <div class="progreso-container">
+            <div id="barra-progreso"></div>
+        </div>
+
+        <div class="controles-principales">
+            <button onclick="anterior()">⏮</button>
+            <button id="btnPlayPause" onclick="togglePlay()">▶</button>
+            <button onclick="siguiente()">⏭</button>
+        </div>
+
+        <div class="playlist-container">
+            <ul id="lista-canciones"></ul>
+        </div>
+    </div>
+
+   
+    <audio id="audio-player"></audio>
+
+    <script src="js/reproductor.js"></script>
+</body>
+</html>
